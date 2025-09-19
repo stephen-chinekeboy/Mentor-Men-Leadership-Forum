@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+<link rel="stylesheet" href="/men.css">
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">MNLF</h1>
+      <ul>
+        <li><a href="#" onclick="
+        homeClick();
+          //  windows.location.href
+          ">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Mission</a></li>
+        <li><a href="#">Goal</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+   <form action="https://usebasin.com/f/2a8051af2738" method="post">
+    <h1>
+      Mentor Men Leadership forum
+    </h1>
+    <p>Register Below To Be A Part Of Us</p>
+    <div class="input-container">
+      <div class="inputs">
+        <label for="f-name">First Name</label>
+        <input id="f-name" type="text" id="f-name" name="first name" placeholder="First Name" required title="Only  letters Allowed">
+      </div>
+
+      <div class="inputs">
+        <label for="l-name">Last Name</label>
+        <input id="l-name" type="text" id="l-name" name="last name" placeholder="Last Name" required>
+      </div>
+
+      <div class="inputs">
+        <label for="mail">Email</label>
+        <input id="mail" type="email" id="mail" name="email" placeholder="Enter Ur Email" required>
+      </div>
+
+      <div class="inputs">
+        <label for="work">Occupation</label>
+        <input id="work" type="text" id="work" name="occupation" placeholder="Income Source" required>
+      </div>
+       <div class="inputs"></div> 
+
+      <div class="inputs">
+        <label for="sel">Select Country Of Origin</label>
+        <select name="select" id="sel">
+          <option value="1">Nigeria</option>
+          <option value="2">Ghana</option>
+          <option value="3">South Africa</option>
+          <option value="4">Kenya</option>
+          <option value="5">United States Of America</option>
+          <option value="6">United Kingdom</option>
+          <option value="7">Canada</option>
+          <option value="8">Australia</option>
+          <option value="9">France</option>
+          <option value="10">Austria</option>
+          <option value="11">Wales</option>
+          <option value="12">Scotland</option>
+          <option value="13">Saudi Arabia</option>
+          <option value="14">Germany</option>
+          <option value="15">Russia</option>
+          <option value="16">Other</option>
+        </select>
+      </div>
+      <div class="submit">
+        <button onclick="
+          button()
+          " class="clicked ">Submit</button>
+      </div>
+    </div> 
+
+    <script>
+      function homeClick() {
+        window.location.href="/men.html"
+      };
+      // function button() {
+      //   const butttonElement = document.querySelector('.clicked');
+      //   if (butttonElement.innerHTML = 'Submit') {
+      //     butttonElement.innerHTML = 'Submitted'
+      //     butttonElement.classList.add('click-button')
+      //   } else  {
+      //     butttonElement.innerHTML = 'Submit'
+      //   }
+      // }
+    </script>
+
+  </form>
