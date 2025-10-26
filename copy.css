@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar */
+header {
+  background-color: #2e2e2e; 
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #7B3f00;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px; 
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.5s linear;
+}
+
+a:hover {
+  color: orange;
+  transition: all 0.5s linear;
+}
+.hamburger{
+  font-size: 22px;
+  color: red;
+  display: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* navbar ends */
+
+/* hero section begins */
+.sec{
+    height:80vh;           
+    background-image: url(/assets/FB_IMG_17579665013496388.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    text-align: start;
+    color: #333;
+    position: relative;
+}
+.backdrop{
+    background: rgb(123, 63, 0, 0.15);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.hero{
+    padding: 0 0 0 15px;
+    z-index: 10;
+}
+h2 {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.forum {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 3px;
+  /* padding: 10px; */
+}
+
+.click {
+  background: #7B3f00;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 10px;
+  color: #fff;
+  outline: none;
+  font-size: 18px; 
+  border: 1px solid #7B3f00;
+  justify-self: start;
+  /* transition:  0.5s; */
+}
+.click:hover {
+  color: #7B3f00;
+  background: #fff;
+  border: 1px solid #7B3f00;
+  transition:  0.5s ;
+  cursor: pointer;
+}
+/* hero section ends */
+
+
+
+
+@media (max-width: 780px)  {
+  nav ul{
+      display: none;
+  }
+  .hamburger{
+      display: flex;
+  }
+
+  .sec{
+    background-position: center;
+    height: 50vh;
+    justify-content: center;
+    text-align: center;
+  }
+  .backdrop{
+    background: rgb(123, 63, 0, 0.3);
+  }
+  .hero{
+    padding: 0 15px;
+  }
+  h2 {
+  font-size: 40px
+  }
+  .forum{
+    font-size: 20px;
+  }
+  .click{
+    font-size: 16px;
+  }
+
+}
